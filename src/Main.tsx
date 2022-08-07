@@ -1,16 +1,19 @@
 import React from 'react';
 
 type Props = {
-  side: string,
-  setSide: React.Dispatch<React.SetStateAction<string>>,
+  side: boolean,
+  setSide: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
 function Main({ side, setSide } :Props) {
   return (
       <main>
-        <section>
-          { side === "face" ? 
-            <button onClick={() => setSide("back")}>TURN OVER</button> 
+        <section id="face">
+          { side === true ? 
+          <section id="face-inner">
+            <h1>Caffeinism-tech</h1>
+            <button onClick={() => setSide(false)}>TURN OVER</button>
+          </section> 
             :  (<><article>
             <p>Kotaro</p>
             <p>JavaScript Lover</p>
