@@ -53,6 +53,13 @@ footer {
   height: 10%;
 }
 
+p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  padding: 0.1em 0;
+  margin: 0 auto;
+}
+
 
 #main-wrapper {
   height: 100%;
@@ -89,10 +96,11 @@ header>h1 {
   right: 0;
   margin: auto 5rem;
   padding: 1rem 2rem;
+  font-size: 1.6rem;
 }
 
 #back {
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 
 #back article {
@@ -106,4 +114,8 @@ header>h1 {
 a {
   text-decoration: none;
   color: white;
+}
+
+footer p {
+  font-size: 1.3rem;
 }

@@ -14,7 +14,7 @@ function App() {
         <Nav setView = {setView}/>
       </header>
       <Main side={side} setSide={setSide}/>
-      <footer>©️ 2022 caffeinism-tech</footer>
+      <footer><p>©️ 2022 caffeinism-tech</p></footer>
     </div>
   );
 }
