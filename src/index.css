@@ -42,6 +42,7 @@ body:before {
 
 header {
   height: 10%;
+  display: flex;
 }
 
 main {
@@ -53,17 +54,23 @@ footer {
 }
 
 
-#face {
+#main-wrapper {
   height: 100%;
 }
 
-#face-inner {
+#face-inner,
+#back {
   position: relative;
   height: 100%;
+  padding-top: 3rem;
 }
 
 header>h1 {
+  /* display: inline; */
   font-size: 16px;
+  position: relative;
+  left: 10rem;
+  top: 2rem;
 }
 
 #face-inner>h1 {
@@ -84,6 +91,17 @@ header>h1 {
   padding: 1rem 2rem;
 }
 
+#back {
+  padding-top: 6rem;
+}
+
+#back article {
+  margin-top: 4rem;
+}
+
+#back article:first-child {
+  margin-top: 0rem;
+}
 
 a {
   text-decoration: none;

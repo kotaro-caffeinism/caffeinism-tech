@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <header>
-        {side === false ? <h1>caffeinism-tech</h1> : ""}
-        <Nav view = {view} setView = {setView}/>
+        {side === false ? <h1 onClick={() => setSide(true)}>caffeinism-tech</h1> : ""}
+        <Nav setView = {setView}/>
       </header>
       <Main side={side} setSide={setSide}/>
       <footer>©️ 2022 caffeinism-tech</footer>
