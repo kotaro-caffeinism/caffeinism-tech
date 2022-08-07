@@ -119,3 +119,15 @@ a {
 footer p {
   font-size: 1.3rem;
 }
+
+@media screen and (min-width: 600px) {
+  /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
+}
+
+@media screen and (min-width: 1025px) {
+
+  /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+  #face-inner>button {
+    margin: auto 50rem;
+  }
+}
