@@ -1,4 +1,4 @@
-body {
+/* body {
   background-image: none;
 }
 
@@ -17,12 +17,10 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
 }
 
 @media screen and (min-width: 1025px) {
 
-  /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
   body {
     background-size: auto;
   }
@@ -31,4 +29,4 @@ p {
     font-size: 3.2rem;
     padding: 2rem;
   }
-}
+} */

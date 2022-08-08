@@ -11,25 +11,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background-image: url("../public/cyber-city.png");
-  background-size: cover;
   color: white;
-}
-
-body:before {
-  content: '';
-  background: inherit;
-  -webkit-filter: blur(1.5px);
-  -moz-filter: blur(1.5px);
-  -o-filter: blur(1.5px);
-  -ms-filter: blur(1.5px);
-  filter: blur(1.5px);
-  position: absolute;
-  top: -1.5px;
-  left: -1.5px;
-  right: -1.5px;
-  bottom: -1.5px;
-  z-index: -1;
 }
 
 #root {
@@ -47,6 +29,26 @@ header {
 
 main {
   height: 80%;
+  background-image: url("../public/cyber-city.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main:before {
+  background-image: none;
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(1.5px);
+  -moz-filter: blur(1.5px);
+  -o-filter: blur(1.5px);
+  -ms-filter: blur(1.5px);
+  filter: blur(1.5px);
+  position: absolute;
+  top: -1.5px;
+  left: -1.5px;
+  right: -1.5px;
+  bottom: -1.5px;
+  z-index: -1;
 }
 
 footer {
@@ -120,6 +122,12 @@ footer p {
   font-size: 1.3rem;
 }
 
+main#teapot>p,
+main#notFound>p {
+  color: #191919;
+  padding: 3rem;
+}
+
 @media screen and (min-width: 600px) {
   /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
 }
@@ -127,6 +135,10 @@ footer p {
 @media screen and (min-width: 1025px) {
 
   /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+  main {
+    background-size: cover;
+  }
+
   #face-inner>button {
     margin: auto 50rem;
   }
